@@ -114,6 +114,7 @@ static NSString *const JJCollectionViewRoundSection = @"com.JJCollectionViewRoun
         //image
         if (model.bgImage) {
             UIImageView *imageV = [self getBGImageViewWithFrame:self.bounds];
+            imageV.contentMode = UIViewContentModeTop;
             [imageV setImage:model.bgImage];
             imageV.layer.cornerRadius = model.cornerRadius;
             [imageV setClipsToBounds:YES];
